@@ -1,0 +1,18 @@
+value = int(input())
+
+cedula100 = int(value / 100)
+cedula50  = int((value%100)/50)
+cedula20  = int(((value%100)%50)/20)
+cedula10  = int((((value%100)%50)%20)/10)
+cedula5   = int(((((value%100)%50)%20)%10)/5)
+cedula2   = int((((((value%100)%50)%20)%10)%5)/2)
+cedula1   = int((((((value%100)%50)%20)%10)%5)%2)
+
+print(value)
+print("%d nota(s) de R$ 100,00" %cedula100)
+print("%d nota(s) de R$ 50,00" %cedula50)
+print("%d nota(s) de R$ 20,00" %cedula20)
+print("%d nota(s) de R$ 10,00" %cedula10)
+print("%d nota(s) de R$ 5,00" %cedula5)
+print("%d nota(s) de R$ 2,00" %cedula2)
+print("%d nota(s) de R$ 1,00" %cedula1)
